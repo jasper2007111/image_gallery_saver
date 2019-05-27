@@ -11,7 +11,7 @@
   FlutterMethodChannel* channel = [FlutterMethodChannel
                                    methodChannelWithName:@"image_gallery_saver"
                                    binaryMessenger:[registrar messenger]];
-  ImageCropPlugin* instance = [ImageCropPlugin new];
+  ImageGallerySaverPlugin* instance = [ImageGallerySaverPlugin new];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 
